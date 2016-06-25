@@ -62,7 +62,7 @@ fn main() {
 	// matching", which allows us to handle each case however we want (similar to the switch
 	// statement in other languages).
 
-	let parson_name = match parson.name {
+	let parson_name = match parson.name.clone() {
 		Some(name) => name,
 		None => "nobody".to_string()
 	};
